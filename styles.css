@@ -427,3 +427,167 @@ footer {
     cursor: pointer;
     height: 2rem;
   }
+
+
+/* Media Queries for Responsive Design */
+
+/* General container adjustment */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .main-header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-header .logo-img {
+        width: 150px; /* Adjust the logo width for smaller screens */
+    }
+
+    .top-header .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-header .btn {
+        margin-top: 20px;
+    }
+
+    #hero {
+        padding: 50px 0;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .coaches-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .coach {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    #contact form label,
+    #contact form input,
+    #contact form textarea {
+        font-size: 1rem;
+    }
+}
+
+/* Adjust hamburger menu for small screens */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .menu-links {
+        position: static;
+        width: 100%;
+        max-height: none;
+        overflow: visible;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background: #467c37;
+    }
+
+    .menu-links.open {
+        display: flex;
+    }
+
+    .menu-links a {
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+
+    .hamburger-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 24px;
+        width: 30px;
+        cursor: pointer;
+    }
+}
+
+/* Hero Section Adjustments */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    #hero .btn {
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+}
+
+/* About Section Adjustments */
+@media (max-width: 768px) {
+    #about h2 {
+        font-size: 2rem;
+    }
+
+    #about p {
+        font-size: 1rem;
+    }
+
+    .coach img {
+        width: 150px;
+    }
+
+    .coach h3 {
+        font-size: 1.5rem;
+    }
+
+    .coach p {
+        font-size: 1rem;
+    }
+}
+
+/* Programs Section Adjustments */
+@media (max-width: 768px) {
+    .program h3 {
+        font-size: 1.5rem;
+    }
+
+    .program p {
+        font-size: 1rem;
+    }
+}
+
+/* Contact Section Adjustments */
+@media (max-width: 768px) {
+    #contact h2 {
+        font-size: 2rem;
+    }
+
+    #contact form {
+        width: 100%;
+    }
+
+    #contact form label,
+    #contact form input,
+    #contact form textarea {
+        font-size: 1rem;
+    }
+
+    #contact form input[type="submit"] {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
+/* Footer Adjustments */
+@media (max-width: 768px) {
+    footer p {
+        font-size: 1rem;
+    }
+}
