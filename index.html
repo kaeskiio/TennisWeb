@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Creek Summer Camp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="top-header">
+        <div class="container">
+            <div class="contact-info">
+                <span>+1 (832) 399-0545</span>
+                <span><a href="mailto:schstenniscamp@gmail.com">schstenniscamp@gmail.com</a></span>
+            </div>
+        </div>
+    </header>
+    <header class="main-header">
+        <div class="container">
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <div class="menu-links">
+                        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                        <li><a href="#programs" onclick="toggleMenu()">Programs</a></li>
+                        <li><a href="#coaches" onclick="toggleMenu()">Coaches</a></li>
+                        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                    </div>
+                </div>
+                <div class="logo">
+                    <img src="assets/logo.jpg" alt="Shadow Creek Summer Camp Logo" class="logo-img">
+                </div>
+                <div class="contact-info">
+                    <span>
+                        <a href="https://www.google.com/maps/search/11850+Broadway+St,+Pearland+TX,+USA" target="_blank" class="created-by">
+                            <img src="assets/pins.png" alt="Location Pin" class="location-pin">
+                            11850 Broadway St,<br> Pearland TX, USA
+                        </a>
+                    </span>
+                </div>
+    </header>
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to Shadow Creek Summer Camp</h1>
+                <p>Join us this summer for an unforgettable tennis experience to grow your tennis </p>
+                <a href="#programs" class="btn">Our Programs</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Shadow Creek Summer Camp offers top-notch tennis training programs for all ages and skill levels. Our experienced coaches are dedicated to helping you improve your game and have fun.</p>
+        </div>
+    </section>
+    <section id="programs">
+        <div class="container">
+            <h2>Our Programs</h2>
+            <div class="program">
+                <h3>Junior Camp</h3>
+                <p>Our Junior Camp is designed for young players looking to improve their skills in a fun and supportive environment.</p>
+            </div>
+            <div class="program">
+                <h3>Adult Camp</h3>
+                <p>The Adult Camp offers intensive training sessions for players of all skill levels, focusing on technique, strategy, and fitness.</p>
+            </div>
+            <div class="program">
+                <h3>Private Lessons</h3>
+                <p>For personalized coaching, our private lessons are tailored to meet your specific needs and goals.</p>
+            </div>
+        </div>
+    </section>
+    <section id="coaches">
+        <div class="container">
+            <h2>Our Coaches</h2>
+            <div class="coaches-container">
+                <div class="coach">
+                    <img src="assets/mark.jpg" alt="Coach Mark" class="img">
+                    <h3>Coach Mark Sapo</h3>
+                    <p>I was the #1 Varsity player from 2013-2017 at Manvel High School. I started coaching tennis in 2016 as a high school student and became a full-time coach in 2018 as a college sophomore. Since 2018, I have coached kids from beginners to varsity students. I have sent numerous kids to regionals and state championships. In 2019, I orchestrated a highly successful summer camp, bringing together six coaches and over 20 enthusiastic kids for a memorable and productive tennis experience. I have coached kids as young as 3 to 84 years old. It's a passion and joy to see the progress each student makes.</p>
+                </div>
+                <div class="coach">
+                    <img src="assets/andrew.jpeg" alt="Coach Andrew" class="img">
+                    <h3>Coach Andrew Guan</h3>
+                    <p>Howdy, my name is Andrew Guan. I have been playing tennis for about 13 years, ever since I was 5 years old. I was a Boys' 12 and Boys' 14 superchamp before USTA implemented levels, and I have been the top player for the Dawson High School varsity team for the past 4 years.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form" name="contact-form" accept-charset="utf-8" action="https://formspree.io/f/xpzvvdrz" method="post">
+                <fieldset id="contact-form-inputs">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" name="name" id="full-name" placeholder="First and Last" required>
+                    <label for="email-address">Email Address</label>
+                    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required>
+                    <label for="telephone">Telephone Number (Optional)</label>
+                    <input type="tel" name="telephone" id="telephone" placeholder="(555) 555-5555">
+                    <label for="message">Message</label>
+                    <textarea rows="6" name="message" id="message" placeholder="Your message..." required></textarea>
+                    <input type="submit" value="Send Message">
+                </fieldset>
+            </form>
+            <a href="#" class="btn">Back to Top</a>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Shadow Creek Summer Camp. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+</html>
