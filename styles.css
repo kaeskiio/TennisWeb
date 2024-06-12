@@ -409,6 +409,7 @@ footer {
 
 .contact-info-container {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
@@ -594,5 +595,21 @@ footer {
 @media (max-width: 768px) {
     footer p {
         font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-info-upper-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .contact-info-container {
+        margin: 0.5rem 0; /* Reduce margin for better spacing */
+    }
+
+    .email-icon, .contact-icon {
+        height: 2rem;
+        width: 2rem; /* Ensure consistent icon size */
     }
 }
