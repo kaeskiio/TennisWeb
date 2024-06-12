@@ -27,10 +27,27 @@ header {
 }
 
 .top-header {
-    background: #333;
+    background: #f4f4f4;
+    color: #000000;
+    padding: 10px 0;
+    margin-bottom: 0; /* Remove bottom margin */
+
+}
+
+.top-header .btn {
+    display: inline-block; /* Keep it inline-block */
+    background: #467c37;
     color: #fff;
-    padding:
-    10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s; /* Add transition for smoother hover effect */
+}
+
+
+.top-header .btn:hover {
+    background-color: #578e48; /* Darken the button color on hover */
 }
 
 .top-header .contact-info {
@@ -44,7 +61,7 @@ header {
 }
 
 .top-header .contact-info a {
-    color: #fff;
+    color: black;
     text-decoration: none;
 }
 
@@ -171,12 +188,6 @@ header {
     z-index: -1; /* Place the pseudo-element behind other content */
 }
 
-.container {
-    background-image: url('your-image.jpg'); /* Specify the URL of your image */
-    background-size: cover; /* Cover the entire container with the background image */
-    background-position: center; /* Center the background image */
-}
-
 #hero h1 {
     margin-bottom: 20px; /* Add margin to separate heading from paragraph */
     color: white; 
@@ -202,7 +213,11 @@ section {
     padding: 50px 0;
 }
 
-#about, #programs, #coaches, #contact {
+#about, #coaches {
+    background: #6db35a;
+}
+
+#program, #contact{
     background: #f4f4f4;
 }
 
@@ -212,27 +227,60 @@ section {
 
 .program h3, .coach h3 {
     margin-top: 20px; /* Add space between coach name and description */
-    color: #333;
+    color: #000000;
+}
+
+#about p{
+    text-align: center;
+}
+
+#about br{
+        display: block; /* Ensures <br> elements behave like block elements */
+        content: ""; /* Ensures <br> elements can receive padding */
+        margin-top: 10px; /* Add top margin as padding */
+}
+
+#about a {
+    color: white;
+    text-decoration: none;
+}
+
+#about a:hover {
+    text-decoration: underline;
 }
 
 .program p, .coach p {
-    color: #666;
+    color: #ffffff;
+    text-align: center;
 }
 
 .coaches-container {
     display: flex;
-    justify-content: space-around; /* Adjust coach container alignment */
+    justify-content: space-evenly; /* Adjust coach container alignment */
     flex-wrap: wrap; /* Allow coaches to wrap on smaller screens */
 }
 
 .coach {
-    flex-basis: calc(50% - 40px); /* Arrange coaches in two columns */
+    display: flex; /* Use flexbox to align items */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    margin-top: 40px; /* Increase the margin between program and coach sections */
     max-width: 400px; /* Limit the maximum width of the coach container */
 }
 
 .coach img {
-    width: 100%; /* Make coach images responsive */
+    width: 200px; /* Make coach images responsive */
     height: auto;
+    border-radius: 50%; /* Make the image circular */
+    margin-right: 20px; /* Add space between image and text */
+}
+
+#about .imgs  {
+    width: 212px; /* Make coach images responsive */
+    height: auto;
+    border-radius: 50%; /* Make the image circular */
+    margin-right: 20px; /* Add space between image and text */
 }
 
 /* Contact Form Styles */
@@ -274,21 +322,6 @@ section {
     text-align: center; /* Center align all inline and inline-block elements */
 }
 
-#contact .btn {
-    display: inline-block; /* Keep it inline-block */
-    background: #467c37;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    transition: background-color 0.3s; /* Add transition for smoother hover effect */
-}
-
-
-#contact .btn:hover {
-    background-color: #578e48; /* Darken the button color on hover */
-}
 
 /* Footer Styles */
 footer {
@@ -296,7 +329,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    margin-top: 50px;
+    margin-top: 0; /* Remove top margin */
 }
 
 .hamburger-menu {
@@ -323,7 +356,7 @@ footer {
 .menu-links {
     position: absolute;
     top: 100%;
-    right: 100%; /* Move the menu links to the right */
+    right: -400%; /* Move the menu links to the right */
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -362,3 +395,35 @@ footer {
 .hamburger-icon.open span:last-child {
     transform: rotate(-45deg) translate(10px, -5px);
 }
+
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: (250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.email-icon {
+    height: 2.5rem;
+  }
+
+  .contact-icon {
+    cursor: default;
+  }
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+  }
