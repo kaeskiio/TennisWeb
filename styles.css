@@ -19,7 +19,7 @@ body {
 /* Header Styles */
 header {
     text-align: center;
-    background: #467c37; /* Set the background color of the header */
+    background: #0792ff; /* Set the background color of the header */
     color: #fff;
     padding: 20px 0;
     border-bottom: 1px solid #ccc;
@@ -36,7 +36,7 @@ header {
 
 .top-header .btn {
     display: inline-block; /* Keep it inline-block */
-    background: #467c37;
+    background: #0792ff;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -47,7 +47,7 @@ header {
 
 
 .top-header .btn:hover {
-    background-color: #578e48; /* Darken the button color on hover */
+    background-color: #59a4d2; /* Darken the button color on hover */
 }
 
 .top-header .contact-info {
@@ -70,11 +70,13 @@ header {
 }
 
 .main-header {
-    background: #467c37; /* Set the background color of the header */
+    background: #0792ff; /* Set the background color of the header */
     color: #fff;
     padding: 20px 0;
     border-bottom: 1px solid #ccc;
     position: relative; /* Set position relative for absolute positioning of pseudo-element */
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bold;
 }
 
 .main-header .container {
@@ -92,7 +94,7 @@ header {
     cursor: pointer;
 }
 .location-pin {
-    width: 20px; /* Adjust the width as needed */
+    width: 30px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
     display: inline-block;
     vertical-align: middle;
@@ -191,11 +193,13 @@ header {
 #hero h1 {
     margin-bottom: 20px; /* Add margin to separate heading from paragraph */
     color: white; 
+    font-family: Georgia, serif;
+    font-weight: bold;
 }
 
 #hero .btn {
     display: inline-block;
-    background: #467c37;
+    background: #0792ff;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -205,7 +209,11 @@ header {
 }
 
 #hero .btn:hover {
-    background-color: #578e48; /* Darken the button color on hover */
+    background-color: #59a4d2; /* Darken the button color on hover */
+}
+
+#hero p{
+    font-family: Verdana, sans-serif;
 }
 
 /* Section Styles */
@@ -214,7 +222,7 @@ section {
 }
 
 #about, #coaches {
-    background: #6db35a;
+    background: #7dc2f7;
 }
 
 #program, #contact{
@@ -228,9 +236,13 @@ section {
 .program h3, .coach h3 {
     margin-top: 20px; /* Add space between coach name and description */
     color: #000000;
+    font-family: Georgia, serif;
 }
 
+
+
 #about p{
+    font-family: Garamond, serif;
     text-align: center;
 }
 
@@ -252,12 +264,18 @@ section {
 .program p, .coach p {
     color: #ffffff;
     text-align: center;
+    font-family: Garamond, serif;
+}
+
+#programs h2, #coaches h2, #about h2, #contact h2{
+    font-family: Garamond, serif;
+    font-size: 36px;
 }
 
 .coaches-container {
     display: flex;
     justify-content: space-evenly; /* Adjust coach container alignment */
-    flex-wrap: wrap; /* Allow coaches to wrap on smaller screens */
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
 }
 
 .coach {
@@ -280,7 +298,6 @@ section {
     width: 212px; /* Make coach images responsive */
     height: auto;
     border-radius: 50%; /* Make the image circular */
-    margin-right: 20px; /* Add space between image and text */
 }
 
 /* Contact Form Styles */
@@ -306,7 +323,7 @@ section {
 #contact form input[type="submit"] {
     margin-top: 20px;
     padding: 10px 20px;
-    background: #467c37;
+    background: #0792ff;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -315,7 +332,7 @@ section {
 }
 
 #contact form input[type="submit"]:hover {
-    background-color: #549b44; /* Darken the submit button color on hover */
+    background-color: #59a4d2; /* Darken the submit button color on hover */
 }
 
 #contact .container {
@@ -325,7 +342,7 @@ section {
 
 /* Footer Styles */
 footer {
-    background: #467c37;
+    background: #0792ff;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -611,5 +628,87 @@ footer {
     .email-icon, .contact-icon {
         height: 2rem;
         width: 2rem; /* Ensure consistent icon size */
+    }
+}
+
+/* Make email and phone number fit on top of each other in the container */
+@media (max-width: 768px) {
+    .contact-info-upper-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .contact-info-container {
+        margin: 0.5rem 0; /* Reduce margin for better spacing */
+    }
+
+    .email-icon, .contact-icon {
+        height: 2rem;
+        width: 2rem; /* Ensure consistent icon size */
+    }
+}
+
+/* Main Content Styling */
+.schedule-section {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.schedule-section h2 {
+    text-align: center;
+}
+
+.section-title {
+    background: white;
+    color: #0792ff;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.coaches-section,
+.location-section,
+.fee-section {
+    margin-bottom: 20px;
+}
+
+.coaches-list,
+.location-details,
+.fee-details {
+    color: black;
+    text-align: center;
+}
+
+.coaches-list li {
+    list-style: none;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.location-section p:hover {
+    text-decoration: underline;
+}
+
+/* Grid Layout for Section Content */
+.section-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Gap between columns */
+}
+
+.program-details,
+.additional-info {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .section-content {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
     }
 }
