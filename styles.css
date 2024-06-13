@@ -289,7 +289,7 @@ section {
 
 .coach img {
     width: 200px; /* Make coach images responsive */
-    height: auto;
+    height: 260px;
     border-radius: 50%; /* Make the image circular */
     margin-right: 20px; /* Add space between image and text */
 }
