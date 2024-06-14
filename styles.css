@@ -208,6 +208,7 @@ header {
     transition: background-color 0.3s; /* Add transition for smoother hover effect */
 }
 
+
 #hero .btn:hover {
     background-color: #59a4d2; /* Darken the button color on hover */
 }
@@ -237,6 +238,28 @@ section {
     margin-top: 20px; /* Add space between coach name and description */
     color: #000000;
     font-family: Georgia, serif;
+}
+
+/* Additional CSS for the Sign Up button */
+.signup-btn {
+    text-align: center; /* Center align content */
+    margin-top: 20px; /* Adjust spacing as needed */
+}
+
+.btn-signup {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0792ff;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-signup:hover {
+    background-color: #59a4d2;
+    cursor: pointer;
 }
 
 
