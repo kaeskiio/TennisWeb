@@ -45,7 +45,35 @@
             </div>
         </div>
     </section>
-    
+    <section id="gallery">
+        <div class="container">
+            <h2>Our Camp!</h2>
+            <div class="gallery-container">
+                <div class="gallery-wrapper">
+                    <div class="gallery-item">
+                        <img src="assets/pic1.png" alt="Gallery Image 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/pic2.png" alt="Gallery Image 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/pic3.png" alt="Gallery Image 3">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/pic4.png" alt="Gallery Image 3">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/pic5.png" alt="Gallery Image 3">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/pic6.png" alt="Gallery Image 3">
+                    </div>
+                </div>
+            </div>
+            <button class="gallery-arrow gallery-arrow-left" onclick="prevImage()">&#9664;</button>
+            <button class="gallery-arrow gallery-arrow-right" onclick="nextImage()">&#9654;</button>
+        </div>
+    </section>    
     <section id="about">
         <div class="container">
             <h2>About Us</h2>
@@ -85,8 +113,7 @@
                         </div>
                         <div class="fee-section">
                             <div class="section-title">FEE (not including sales tax)</div>
-                            <p class="fee-details">June 24 - 27: $119 | Daily Drop-in: $35</p>
-                            <p class="fee-details">July 1 - August 8: $139 per week | Daily Drop-in: $40</p>
+                            <p class="fee-details">$139 per week | Daily Drop-in: $40</p>
                         </div>
                     </div>
                 </div>
@@ -189,5 +216,52 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <script>
+        let currentIndex = 0;
+        
+        function showImage(index) {
+            const galleryWrapper = document.querySelector('.gallery-wrapper');
+            const totalImages = document.querySelectorAll('.gallery-item').length;
+            if (index >= totalImages) {
+                currentIndex = 0;
+            } else if (index < 0) {
+                currentIndex = totalImages - 1;
+            } else {
+                currentIndex = index;
+            }
+            galleryWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+        
+        function nextImage() {
+            showImage(currentIndex + 1);
+        }
+        
+        function prevImage() {
+            showImage(currentIndex - 1);
+        }
+        
+        let touchStartX = 0;
+        let touchEndX = 0;
+        
+        function handleTouchStart(event) {
+            touchStartX = event.changedTouches[0].screenX;
+        }
+        
+        function handleTouchMove(event) {
+            touchEndX = event.changedTouches[0].screenX;
+        }
+        
+        function handleTouchEnd() {
+            if (touchEndX < touchStartX) {
+                nextImage();
+            } else if (touchEndX > touchStartX) {
+                prevImage();
+            }
+        }
+        
+        document.querySelector('.gallery-container').addEventListener('touchstart', handleTouchStart, false);
+        document.querySelector('.gallery-container').addEventListener('touchmove', handleTouchMove, false);
+        document.querySelector('.gallery-container').addEventListener('touchend', handleTouchEnd, false);
+        </script>              
     </body>
 </html>

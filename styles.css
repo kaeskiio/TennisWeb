@@ -290,7 +290,7 @@ section {
     font-family: Garamond, serif;
 }
 
-#programs h2, #coaches h2, #about h2, #contact h2{
+#programs h2, #coaches h2, #about h2, #contact h2, #gallery h2{
     font-family: Garamond, serif;
     font-size: 36px;
 }
@@ -734,5 +734,74 @@ footer {
 @media (max-width: 768px) {
     .section-content {
         grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+}
+
+/* Gallery Section Styles */
+#gallery {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Ensure only one image is visible at a time */
+}
+
+.gallery-wrapper {
+    display: flex;
+    transition: transform 0.3s ease;
+    width: 100%;
+}
+
+.gallery-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative; /* Add position relative for the img pseudo-element */
+    padding-top: 56.25%; /* Maintain a 16:9 aspect ratio */
+    overflow: hidden; /* Hide overflow to maintain aspect ratio */
+}
+
+.gallery-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire area */
+    display: block;
+}
+
+.gallery-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.gallery-arrow-left {
+    left: 10px;
+}
+
+.gallery-arrow-right {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .gallery-item {
+        width: 100%;
     }
 }
