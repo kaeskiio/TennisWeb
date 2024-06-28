@@ -745,8 +745,6 @@ footer {
     overflow: hidden;
 }
 
-
-
 .gallery-container {
     display: flex;
     justify-content: center;
@@ -805,3 +803,19 @@ footer {
         width: 100%;
     }
 }
+
+/* Announcement Bar Styles */
+#announcement-bar {
+    background-color: #ffc107; /* Background color for the announcement bar */
+    color: #000; /* Text color for the announcement bar */
+    padding: 10px 0; /* Padding to make the bar thin */
+    text-align: center; /* Center the text */
+    font-weight: bold; /* Make the text bold */
+    font-size: 14px; /* Set the font size */
+    border-bottom: 1px solid #ccc; /* Optional: add a border at the bottom */
+}
+
+#announcement-bar p {
+    margin: 0; /* Remove default margin */
+}
+
