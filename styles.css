@@ -75,8 +75,7 @@ header {
     padding: 20px 0;
     border-bottom: 1px solid #ccc;
     position: relative; /* Set position relative for absolute positioning of pseudo-element */
-    font-family: "Lucida Console", "Courier New", monospace;
-    font-weight: bold;
+    font-family: Verdana, sans-serif;
 }
 
 .main-header .container {
