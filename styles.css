@@ -803,20 +803,25 @@ footer {
     z-index: 10;
 }
 
+/* Position the left arrow */
 .gallery-arrow-left {
-    left: 10px;
+    position: absolute;
+    left: 10px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
 }
 
+/* Position the right arrow */
 .gallery-arrow-right {
-    right: 10px;
+    position: absolute;
+    right: 10px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 @media (max-width: 768px) {
     .gallery-item {
         width: 100%;
-    }
-    .gallery-arrow {
-        top: 50%;
     }
 }
 
