@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
 /* Reset CSS */
 html, body {
     margin: 0;
@@ -5,7 +6,7 @@ html, body {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Proxima Nova';
 }
 
 /* General Styles */
@@ -75,7 +76,7 @@ header {
     padding: 20px 0;
     border-bottom: 1px solid #ccc;
     position: relative; /* Set position relative for absolute positioning of pseudo-element */
-    font-family: Verdana, sans-serif;
+    font-family: 'Proxima Nova';
 }
 
 .main-header .container {
@@ -192,7 +193,8 @@ header {
 #hero h1 {
     margin-bottom: 20px; /* Add margin to separate heading from paragraph */
     color: white; 
-    font-family: Georgia, serif;
+    font-family: 'Inter';
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -213,7 +215,7 @@ header {
 }
 
 #hero p{
-    font-family: Verdana, sans-serif;
+    font-family: 'Proxima Nova';
 }
 
 /* Section Styles */
@@ -236,7 +238,7 @@ section {
 .program h3, .coach h3 {
     margin-top: 20px; /* Add space between coach name and description */
     color: #000000;
-    font-family: Georgia, serif;
+    font-family: 'Inter';
 }
 
 /* Additional CSS for the Sign Up button */
@@ -265,7 +267,7 @@ section {
 
 
 #about p{
-    font-family: Garamond, serif;
+    font-family: 'Proxima Nova';
     text-align: center;
 }
 
@@ -287,14 +289,24 @@ section {
 .program p, .coach p {
     color: #ffffff;
     text-align: center;
-    font-family: Garamond, serif;
+    font-family: 'Proxima Nova';
 }
 
 #programs h2, #coaches h2, #about h2, #contact h2, #gallery h2{
-    font-family: Garamond, serif;
+    font-family: 'Inter';
     font-size: 36px;
 }
 
+#programs h4{
+    font-family: 'Inter';
+    font-size: 24px;
+    text-align: center;
+    color: red;
+}
+
+#programs p{
+    text-align: center;
+}
 .coaches-container {
     display: flex;
     justify-content: space-evenly; /* Adjust coach container alignment */
@@ -727,7 +739,8 @@ footer {
 .program-details,
 .additional-info {
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Proxima Nova';
+    font-weight: bold;
 }
 
 /* Media Queries for Responsive Design */
@@ -801,6 +814,9 @@ footer {
 @media (max-width: 768px) {
     .gallery-item {
         width: 100%;
+    }
+    .gallery-arrow {
+        top: 50%;
     }
 }
 
