@@ -802,7 +802,10 @@ footer {
     cursor: pointer;
     z-index: 10;
 }
-
+/* Ensure the image container uses flexbox */
+.image-container {
+    position: relative; /* Make it relative to position arrows absolutely */
+}
 /* Position the left arrow */
 .gallery-arrow-left {
     position: absolute;
