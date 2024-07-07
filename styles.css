@@ -839,6 +839,16 @@ footer {
     border-bottom: 1px solid #ccc; /* Optional: add a border at the bottom */
 }
 
+.secondcontainer{
+    background-color: #0792ff; /* Background color for the announcement bar */
+    color: #000; /* Text color for the announcement bar */
+    padding: 10px 0; /* Padding to make the bar thin */
+    text-align: center; /* Center the text */
+    font-weight: bold; /* Make the text bold */
+    font-size: 14px; /* Set the font size */
+    border-bottom: 1px solid #ccc; /* Optional: add a border at the bottom */
+}
+
 #announcement-bar p {
     margin: 0; /* Remove default margin */
 }
