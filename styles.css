@@ -20,7 +20,7 @@ body {
 /* Header Styles */
 header {
     text-align: center;
-    background: #0792ff; /* Set the background color of the header */
+    background: #56a7d4; /* Set the background color of the header */
     color: #fff;
     padding: 20px 0;
     border-bottom: 1px solid #ccc;
@@ -37,7 +37,7 @@ header {
 
 .top-header .btn {
     display: inline-block; /* Keep it inline-block */
-    background: #0792ff;
+    background: #56a7d4;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -71,7 +71,7 @@ header {
 }
 
 .main-header {
-    background: #0792ff; /* Set the background color of the header */
+    background: #56a7d4; /* Set the background color of the header */
     color: #fff;
     padding: 20px 0;
     border-bottom: 1px solid #ccc;
@@ -200,7 +200,7 @@ header {
 
 #hero .btn {
     display: inline-block;
-    background: #0792ff;
+    background: #56a7d4;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -250,7 +250,7 @@ section {
 .btn-signup {
     display: inline-block;
     padding: 12px 24px;
-    background-color: #0792ff;
+    background-color: #56a7d4;
     color: white;
     text-decoration: none;
     font-size: 1.1rem;
@@ -358,7 +358,7 @@ section {
 #contact form input[type="submit"] {
     margin-top: 20px;
     padding: 10px 20px;
-    background: #0792ff;
+    background: #56a7d4;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -377,7 +377,7 @@ section {
 
 /* Footer Styles */
 footer {
-    background: #0792ff;
+    background: #56a7d4;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -548,7 +548,7 @@ footer {
         display: none;
         flex-direction: column;
         align-items: center;
-        background: #0792ff;
+        background: #56a7d4;
     }
 
     .menu-links.open {
@@ -699,7 +699,7 @@ footer {
 
 .section-title {
     background: white;
-    color: #0792ff;
+    color: #56a7d4;
     font-weight: bold;
     padding: 10px;
     text-align: center;
@@ -840,7 +840,7 @@ footer {
 }
 
 .secondcontainer{
-    background-color: #0792ff; /* Background color for the announcement bar */
+    background-color: #56a7d4; /* Background color for the announcement bar */
     color: #000; /* Text color for the announcement bar */
     padding: 10px 0; /* Padding to make the bar thin */
     text-align: center; /* Center the text */
