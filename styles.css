@@ -259,6 +259,12 @@ section {
     margin: 15px;
 }
 
+h5{
+    text-align: center;
+    color: #56a7d4;
+    font-size: 1.5rem;
+}
+
 .btn-signup:hover {
     background-color: #59a4d2;
     cursor: pointer;
